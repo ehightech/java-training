@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <!-- 构造函数装配 -->
+  <bean id="cStudent" class="com.homework.bean.assembling.xml.Student">
+    <constructor-arg name="name" value="张三"/>
+    <constructor-arg name="grade" value="一年级"/>
+    <constructor-arg name="courseList">
+      <list>
+        <value>语文</value>
+        <value>数学</value>
+        <value>历史</value>
+      </list>
+    </constructor-arg>
+  </bean>
+
+  <!-- 设置方式装配 -->
+  <bean id="sStudent" class="com.homework.bean.assembling.xml.Student">
+    <property name="name" value="王五"/>
+    <property name="grade" value="二年级"/>
+    <property name="courseList">
+      <list>
+        <value>政治</value>
+        <value>外语</value>
+        <value>地理</value>
+      </list>
+    </property>
+  </bean>
+</beans>
