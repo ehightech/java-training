@@ -4,6 +4,9 @@ import com.homework.bean.assembling.annotation.controller.SchoolController;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/**
+ * 自动装配bean
+ */
 public class BeanAssemblingAutomation {
 
   public static void main(String[] args) {
