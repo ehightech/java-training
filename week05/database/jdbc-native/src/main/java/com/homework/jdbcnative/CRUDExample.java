@@ -57,6 +57,11 @@ public class CRUDExample {
       preparedStatement = conn.prepareStatement(sqlDelete);
       preparedStatement.executeUpdate();
     } catch (Exception ex) {
+      try {
+        conn.rollback();
+      } catch (SQLException throwables) {
+        throwables.printStackTrace();
+      }
       System.out.println(ex);
     } finally {
       if (Objects.nonNull(conn)) {
