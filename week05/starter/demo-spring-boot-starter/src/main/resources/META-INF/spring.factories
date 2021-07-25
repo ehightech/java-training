@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.homework.demo.starter.config.StudentAutoConfiguration,\
+  com.homework.demo.starter.config.KlassAutoConfiguration,\
+  com.homework.demo.starter.config.SchoolAutoConfiguration
