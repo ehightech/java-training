@@ -11,7 +11,7 @@
   </parent>
   <groupId>com.homework</groupId>
   <artifactId>bean-assembling</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>2021.07.1</version>
   <name>bean-assembling</name>
   <description>Demo project for Spring Boot</description>
   <properties>
